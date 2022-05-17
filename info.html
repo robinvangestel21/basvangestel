@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bas van Gestel</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+</head>
+<body onresize="checkWidth()">
+	<div class="background-header">
+		<div class="background-header-top">
+			<div>
+				<a href="/" class="hamburger-header-link hamburger-inactive">work</a>
+				<a href="info" class="hamburger-header-link hamburger-active">info</a>
+			</div>
+
+			<button class="close-hamburger-menu-button" onclick="closeHamburgerMenu()">
+				<svg id="Layer_6" data-name="Layer 6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.63 25.39">
+					<defs>
+						<style>.cls-2{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2px;}</style>
+					</defs>
+					<line class="cls-2" x1="0.69" y1="0.73" x2="25.94" y2="24.67"/>
+					<line class="cls-2" x1="25.94" y1="0.73" x2="0.69" y2="24.67"/>
+				</svg>
+			</button>
+		</div>
+
+		<p class="hamburger-header-text">
+			<a class="link-white" href="tel:0031615177799">06 151 777 99</a>
+			<br>
+			<a class="link-white" href="mailto:basvangestel90@gmail.com">basvangestel90@gmail.com</a>
+			<br>
+			<a class="link-white" href="https://www.instagram.com/basvangestel/" target="_blank">instagram</a>
+		</p>
+	</div>
+
+	<div id="header-and-main-info">
+		<div>
+			<header>
+				<div class="dots">
+					<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71.83 11.22">
+						<circle cx="5.61" cy="5.61" r="5.61"/>
+						<circle cx="35.91" cy="5.61" r="5.61"/>
+						<circle cx="66.22" cy="5.61" r="5.61"/>
+					</svg>
+				</div>
+
+				<div class="header-links">
+					<a href="/" class="header-link inactive">work</a>
+					<a href="info" class="header-link active">info</a>
+				</div>
+
+				<button id="hamburger-menu" onclick="openHamburgerMenu()">
+					<svg id="Layer_5" data-name="Layer 5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.25 25.94">
+						<defs>
+							<style>.clv-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px;}
+							</style>
+						</defs>
+						<line class="clv-1" y1="1" x2="35.25" y2="1"/>
+						<line class="clv-1" y1="12.97" x2="35.25" y2="12.97"/>
+						<line class="clv-1" y1="24.94" x2="35.25" y2="24.94"/>
+					</svg>
+				</button>
+			</header>
+
+			<main>
+				<a href="/">
+				<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 718.7 85.37">
+					<path d="M638.77,543c0,16.44-9.26,25.52-22,25.52-8.54,0-14.53-4.63-17.35-12.54h-.36v11.45H579.74v-66.3h19.35v29.15h.36c2.82-8.17,8.81-12.71,17.53-12.71C629.24,517.55,638.77,526.54,638.77,543Zm-19.61,0c0-7.09-3.73-11.9-9.9-11.9-6,0-10.17,4.54-10.17,11.26v1.36c0,7.09,4.26,11.26,10.08,11.26C615.43,555,619.16,550.24,619.16,543Z" transform="translate(-579.74 -501.11)"/>
+					<path d="M703.16,554.24,703.07,566a33.9,33.9,0,0,1-12.44,2.37c-9.81,0-12.72-4.45-12.72-10.09v-1.45h-.45c-2.63,6.45-8.63,11.72-18.07,11.72s-16.17-5.72-16.17-13.08c0-5.63,3.63-9.54,11.53-12.26,4.54-1.55,12.45-3.73,22.53-6.54v-.09c0-3.73-3-5.81-7.54-5.81s-8.63,1.81-11.44,8.71l-14.63-5c5.09-12.72,15-16.8,27.89-16.8,16.62,0,25.06,7.9,25.06,19.25v13c0,1.72,0,4.63,3.36,4.63A22.65,22.65,0,0,0,703.16,554.24Zm-25.88-4.09v-7.54l-9.63,3.27c-3.45,1.18-5.09,2.36-5.09,4.36,0,2.18,1.82,4.63,5.64,4.63S676.1,552.69,677.28,550.15Z" transform="translate(-579.74 -501.11)"/>
+					<path d="M717,549.61c3.09,4.45,8.08,6.9,15.17,6.9,5.18,0,7.81-1.73,7.81-4,0-1.63-1.18-2.36-4.09-2.63-4.72-.46-9.17-.73-13-1.18-8.09-.91-15.54-4.82-15.54-14.44,0-10.63,10.18-16.71,23.89-16.71,9.26,0,18,2.54,23.8,8.62L745.84,535a20.78,20.78,0,0,0-14.53-5.54c-4.09,0-6.81,1.46-6.81,3.46,0,1.45,1,2.27,3.63,2.54,3.91.36,8.09.82,11.54,1.18,9.71,1,17.34,4.72,17.34,14.35,0,11.26-9.71,17.53-25.61,17.53-12.08,0-21.89-3.45-26.24-12.45Z" transform="translate(-579.74 -501.11)"/>
+					<path d="M845.92,518.64l-18.34,48.77H804.33l-18.44-48.77h20.8l9.08,31.78h.82l9.53-31.78Z" transform="translate(-579.74 -501.11)"/>
+					<path d="M906.22,554.24,906.13,566a33.86,33.86,0,0,1-12.44,2.37c-9.81,0-12.72-4.45-12.72-10.09v-1.45h-.45c-2.63,6.45-8.63,11.72-18.07,11.72s-16.17-5.72-16.17-13.08c0-5.63,3.63-9.54,11.53-12.26,4.55-1.55,12.45-3.73,22.53-6.54v-.09c0-3.73-3-5.81-7.54-5.81s-8.63,1.81-11.44,8.71l-14.63-5c5.09-12.72,15-16.8,27.89-16.8,16.62,0,25.06,7.9,25.06,19.25v13c0,1.72,0,4.63,3.36,4.63A22.65,22.65,0,0,0,906.22,554.24Zm-25.88-4.09v-7.54l-9.63,3.27c-3.45,1.18-5.08,2.36-5.08,4.36,0,2.18,1.81,4.63,5.63,4.63S879.16,552.69,880.34,550.15Z" transform="translate(-579.74 -501.11)"/>
+					<path d="M965.8,536.07v31.34H946.45V539.62c0-4.54-2.09-7.45-6.81-7.45-4.18,0-7.81,2.27-7.81,9.35v25.89H912.48V518.64h18.71v12.08h.55c2.18-7.45,7.26-13.17,17.25-13.17C959.71,517.55,965.8,523.72,965.8,536.07Z" transform="translate(-579.74 -501.11)"/>
+					<path d="M1058,567.59c0,12.17-13.35,18.89-33.15,18.89-16.53,0-22.88-4.81-22.88-10.35,0-4.64,4.26-6.54,10.26-6.91v-.72c-8.27-.28-12.72-3.82-12.72-9.72,0-6.09,4.91-10.54,13.72-11.9v-.36c-7.27-2.64-11.36-7.27-11.36-13.35,0-9.45,9.72-15.62,26.25-15.62a52.29,52.29,0,0,1,11.35,1.18l1-15.08h17v.46l-13.72,16c6.72,2.63,10.45,7.17,10.45,13.08,0,9.44-9.81,15.53-26.07,15.53a56.16,56.16,0,0,1-9.17-.73c-2.73.64-3.82,1.73-3.82,3.18s1.19,2.27,4.18,2.27h18C1050.43,553.42,1058,558.14,1058,567.59Zm-16.89,4.09c0-1.91-1.73-2.46-6.09-2.46h-15.53c-3.08,0-4,1.37-4,2.91,0,3.09,3.81,4.81,11.8,4.81C1035.54,576.94,1041.08,575.13,1041.08,571.68Zm-19.71-38.51c0,4.27,2.45,6.17,6.63,6.17s6.63-1.9,6.63-6.17-2.54-6.27-6.63-6.27S1021.37,528.81,1021.37,533.17Z" transform="translate(-579.74 -501.11)"/>
+					<path d="M1114.18,544.88l-36.14-.09c.36,6.72,3.27,10.08,9.63,10.08,4.72,0,9-1.72,10.62-8.26l15.53,4.36c-4.27,13.17-14.71,17.53-27.52,17.53-17.71,0-27.79-9.63-27.79-24.8,0-15.71,11.17-26.15,28.34-26.15C1103.47,517.55,1114.37,527.45,1114.18,544.88Zm-35.87-6.54h17.44c-1.09-5.72-4-8.08-8.36-8.08C1082.49,530.26,1079.4,532.71,1078.31,538.34Z" transform="translate(-579.74 -501.11)"/>
+					<path d="M1129.26,549.61c3.08,4.45,8.08,6.9,15.16,6.9,5.18,0,7.81-1.73,7.81-4,0-1.63-1.18-2.36-4.08-2.63-4.73-.46-9.18-.73-13-1.18-8.08-.91-15.53-4.82-15.53-14.44,0-10.63,10.17-16.71,23.88-16.71,9.27,0,18,2.54,23.8,8.62l-9.17,8.81a20.8,20.8,0,0,0-14.53-5.54c-4.09,0-6.82,1.46-6.82,3.46,0,1.45,1,2.27,3.64,2.54,3.9.36,8.08.82,11.53,1.18,9.72,1,17.35,4.72,17.35,14.35,0,11.26-9.72,17.53-25.61,17.53-12.08,0-21.89-3.45-26.25-12.45Z" transform="translate(-579.74 -501.11)"/>
+					<path d="M1181.75,518.64l7.9-14.08H1198l.28,14.08H1211V532h-12.71l-.1,13.08c-.09,5.35,1,8.26,6.82,8.26a28.53,28.53,0,0,0,6.08-.64v14a50.31,50.31,0,0,1-14.08,1.73c-15.07,0-18.07-6.18-18.07-13.35V532h-7.08V518.64Z" transform="translate(-579.74 -501.11)"/>
+					<path d="M1271.56,544.88l-36.14-.09c.36,6.72,3.27,10.08,9.62,10.08,4.73,0,9-1.72,10.63-8.26L1271.2,551c-4.27,13.17-14.71,17.53-27.52,17.53-17.71,0-27.79-9.63-27.79-24.8,0-15.71,11.17-26.15,28.34-26.15C1260.85,517.55,1271.75,527.45,1271.56,544.88Zm-35.87-6.54h17.44c-1.09-5.72-4-8.08-8.36-8.08C1239.87,530.26,1236.78,532.71,1235.69,538.34Z" transform="translate(-579.74 -501.11)"/>
+					<path d="M1279.1,501.11h19.34v66.3H1279.1Z" transform="translate(-579.74 -501.11)"/>
+				</svg>
+				</a>
+				
+				<p class="info-text">
+					Hey, I’m Bas van Gestel (1990), a creative director, cameraman, editor, illustrator and animator based in ’s-Hertogenbosch, the Netherlands. I am the co-founder and creative director at <a href="https://kinsmen.tv/" target="_blank" class="link-black">Kinsmen Collective</a>, a Dutch motion design studio. With Kinsmen, I mostly focus on creating digital illustrations and animations.
+				</p>
+				<p class="info-text">
+					Next to my main focus at Kinsmen, I also love to do small independent video projects. I mostly like to do projects with a maximum of 2-3 day shoots with a small crew. I love using as little gear as I can and always try to use natural light when possible. I specialize in small business promotions, travel videos and music videos.
+				</p>
+				<p class="info-text">
+					If you would like to work with me, send me a message, give me a call or send me an email. Dutch and English a both fine of course. Cheers!
+				</p>
+				<p class="info-text">
+					<a class="link-black" href="tel:0031615177799">06 151 777 99</a>
+					<br>
+					<a class="link-black"href="mailto:basvangestel90@gmail.com">basvangestel90@gmail.com</a>
+				</p>
+				<p class="info-text">
+					<a class="link-black" href="https://www.instagram.com/basvangestel/" target="_blank">instagram</a>
+					<br>
+					<a class="link-black" href="https://vimeo.com/user122707907" target="_blank">vimeo</a>
+					
+				</p>
+				<a class="back-link" href="/">
+					<svg id="Layer_4" data-name="Layer 4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.07 19.39">
+						<path d="M662.7,217.09l-12.29,4.12,12.29,4v5.65l-17.07-6.2v-6.76l17.07-6.43Z" transform="translate(-645.63 -211.44)"/>
+					</svg>
+				</a>
+			</main>
+		</div>
+		<footer>
+			<a class="link-white" href="tel:0031615177799">06 151 777 99</a>
+			<a class="link-white" href="mailto:basvangestel90@gmail.com">basvangestel90@gmail.com</a>
+			<a class="link-white" href="https://www.instagram.com/basvangestel/" target="_blank">instagram</a>
+		</footer>
+	</div>
+
+	<script>
+		function openHamburgerMenu(){
+			document.getElementById("header-and-main-info").style.top = "var(--displacement)";
+			document.getElementById("hamburger-menu").style.opacity = "0";
+			document.getElementById("hamburger-menu").disabled = true;
+			document.getElementById("hamburger-menu").style.cursor = "default";
+		}
+
+		function closeHamburgerMenu(){
+			document.getElementById("header-and-main-info").style.top = "0";
+			document.getElementById("hamburger-menu").style.opacity = "1";
+			document.getElementById("hamburger-menu").disabled = false;
+			document.getElementById("hamburger-menu").style.cursor = "pointer";
+		}
+		function checkWidth(){
+			if (window.innerWidth > 1100){
+				document.getElementById("header-and-main-info").style.top = "0";
+				document.getElementById("hamburger-menu").style.opacity = "1";
+				document.getElementById("hamburger-menu").disabled = false;
+				document.getElementById("hamburger-menu").style.cursor = "pointer";
+			}
+		}
+		
+	</script>
+
+	
+
+</body>
+</html>

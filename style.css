@@ -1,0 +1,453 @@
+:root{
+	--left-and-right-margin: 50px;
+	--header-height: 100px;
+	--grid-spacing: 20px;
+	--displacement: 250px;
+	--padding-mobile: 20px;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+*:focus {
+    outline: 0 !important;
+}
+
+/* HEADER BACKGROUND (HAMBURGER) */
+
+.background-header{
+	width: calc( 100vw - 2* var(--left-and-right-margin));
+	height: calc(var(--displacement) - 30px - var(--left-and-right-margin));
+	background-color: rgba(0, 0, 0, 1);
+	position: absolute;
+	top: 0;
+	padding: 35px var(--left-and-right-margin) var(--left-and-right-margin) var(--left-and-right-margin) ;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.background-header-top{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.hamburger-header-link{
+	color: white;
+	font-size: 24px;
+	margin: 0 50px 0 0;
+	text-decoration: none;
+}
+.hamburger-header-link:hover{
+	border-bottom: 4px solid white;
+}
+
+.hamburger-active{ /*IN COMBINATION WITH HAMBURGER-HEADER-LINK*/
+	border-bottom: 4px solid white;
+}
+
+.hamburger-inactive{ /*IN COMBINATION WITH HAMBURGER-HEADER-LINK*/
+	border-bottom: none;
+}
+
+.hamburger-header-text{
+	color: white;
+	font-size: 24px;
+	margin: 0;
+}
+
+#Layer_6{ /*CROSS*/
+	width:25px;
+}
+
+.link-white{
+	text-decoration: none;
+	color: white;
+	font-weight: 300;
+}
+.link-white:hover{
+	text-decoration: underline;
+}
+
+.close-hamburger-menu-button{
+	border: none;
+	background: none;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+}
+
+/* HEADER AND MAIN CONTAINER */
+#header-and-main{
+	width: 100vw;
+	position: absolute;
+	top: 0;
+	transition: top 500ms ease;
+}
+
+#header-and-main-info{
+	width: 100vw;
+	position: absolute;
+	top: 0;
+	transition: top 500ms ease;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+/* HEADER FULL-SCREEN */
+header{
+	width: calc(100% - 2*var(--left-and-right-margin));
+	height: var(--header-height);
+
+	padding: 0 var(--left-and-right-margin) 0 var(--left-and-right-margin);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	background-color: white;
+}
+
+#Layer_2{ /*DOTS*/
+	width: 71px;
+}
+
+.header-link{
+	margin: 0 0 0 50px;
+	color: black;
+	font-size: 24px;
+	text-decoration: none;
+}
+
+.header-link:hover{
+	border-bottom: 4px solid black;
+}
+
+.active{ /*IN COMBINATION WITH HEADER-LINK*/
+	border-bottom: 4px solid black;
+}
+
+.inactive{ /*IN COMBINATION WITH HEADER-LINK*/
+	border-bottom: none;
+}
+
+/* HAMBURGER IN HEADER */
+#hamburger-menu{
+	display: none;
+	width: 35px;
+	height: 26px;
+	background: none;
+	flex-direction: column;
+	justify-content: space-between;
+	cursor: pointer;
+	border: none;
+	background: none;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+
+	transition: opacity 500ms ease;
+}
+
+
+#Layer_5{/*HAMBURGER MENU*/
+	height: 100%;
+}
+
+/* MAIN MAIN */
+main{
+	width: calc(100% - 2*var(--left-and-right-margin));
+	padding: 0 var(--left-and-right-margin) 100px var(--left-and-right-margin);
+
+	background-color: white;
+}
+
+#Layer_1{ /*BAS VAN GESTEL LOGO*/
+	width: 730px;
+	padding: 0 0 20px 0;
+}
+
+/* MAIN OF INDEX PAGE */
+.thumbnails{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.thumbnail{
+	position: relative;
+	width: calc( ( 100% - ( 2* var(--grid-spacing) ) )/3);
+	border: none;
+	background: none;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+}
+
+.thumbnail-img{
+	display: block;
+	width: 100%;
+	height: auto;
+	background-color: black;
+	margin: 0 0 20px 0;
+}
+
+.overlay{ /*FOR INDIVIDUAL THUMBNAILS*/
+	opacity: 0;
+
+	width: 100%;
+	height: calc(100% - 20px);
+
+	position: absolute;
+	bottom: 20px;
+
+	color: white;
+	text-align: right;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+
+	transition: opacity 500ms ease;
+
+	font-family: 'Poppins', sans-serif;
+}
+
+.thumbnail:hover > .overlay{
+	opacity: 1;
+}
+
+
+/* VIDEO PLAYER OVERLAY */
+#video-player-overlay{
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.video-player-background-exit{
+	width: 100vw;
+	height: 100vh;
+	z-index: 2;
+	position: absolute;
+	left: 0;
+	top:0;
+	background-color: rgba(0, 0, 0, 0.85);
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+
+.player-box{
+	width: 80vw;
+	height: calc( 80vw * 0.563 + 50px);
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	z-index: 4;
+}
+
+.close-video-button{
+	z-index: 2;
+	width: 50px;
+	height: 50px;
+	padding: 0;
+	margin: 0;
+	border: none;
+	background: none;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+}
+
+#Layer_3{ /*EXIT CROSS*/
+	width: 25px;
+}
+
+.cls-1{
+	transition: stroke 150ms;
+}
+
+.close-video-button:hover .cls-1{
+	stroke: #808080;
+}
+
+.video-title{
+	color: white;
+	z-index: 3;
+	font-size: 24px;
+	margin: 20px 0 0 0;
+}
+
+.video-subtitle{
+	color: white;
+	z-index: 3;
+	font-size: 16px;
+	margin: 0;
+	font-weight: 300;
+}
+
+#Layer_7{/*BACK LINK*/
+	width: 17px;
+	transform: rotate(90deg);
+}
+
+.back-link:hover #Layer_7{
+	fill: #808080;
+}
+/* MAIN OF INFO PAGE */
+.info-text{
+	font-size: 24px;
+	max-width: 1000px;
+
+	margin-top: 0;
+}
+
+.back-link{
+	text-decoration: none;
+}
+
+#Layer_4{/*BACK LINK*/
+	width: 17px;
+	transition: fill 150ms;
+}
+
+.back-link:hover #Layer_4{
+	fill: #808080;
+}
+
+.link-black{
+	text-decoration: none;
+	color: black;
+}
+.link-black:hover{
+	text-decoration: underline;
+}
+
+/* FOOTER */
+footer{
+	box-sizing: border-box;
+	width: 100vw;
+	padding: var(--left-and-right-margin);
+	height: 200px;
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 24px;
+}
+
+@media only screen and (max-height: calc(50vw)){
+	.player-box{
+		width: 160vh; /*MAYBE REDUCE A BIT*/
+		height: calc( 160vh * 0.563 + 50px);
+	}
+}
+
+@media only screen and (max-width: 1300px) {
+	/* MAIN OF INDEX PAGE */
+	.thumbnail{
+		position: relative;
+		width: calc( ( 100% -  var(--grid-spacing) )/2);
+	}
+}
+
+@media only screen and (max-width: 1100px) {
+	/* HEADER FULL-SCREEN */
+	.header-links{
+		display: none;
+	}
+	/* HAMBURGER IN HEADER */
+	#hamburger-menu{
+		display: flex;
+	}
+
+}
+
+@media only screen and (max-width: 835px) {
+	/* MAIN MAIN */
+	#Layer_1{/*BAS VAN GESTEL LOGO*/
+		width: 100%;
+	}
+
+	/* MAIN OF INDEX PAGE */
+	.thumbnail{
+		width: 100%;
+	}
+
+	/* MAIN OF INFO PAGE */
+	.info-text{
+		width: 100%;
+	}
+
+	.player-box{
+		width: calc( 100vw - 2 * var(--left-and-right-margin) );
+		height: calc( ( 100vw - 2 * var(--left-and-right-margin) ) * 0.563 + 50px);
+	}
+
+}
+@media only screen and (max-width: 600px){
+	.background-header{
+		width: calc( 100vw - 2* var(--padding-mobile));
+		padding: var(--padding-mobile);
+	}
+	header{
+		width: calc(100% - 2*var(--padding-mobile));
+
+		padding: var(--padding-mobile);
+		height: auto;
+	}
+
+	main{
+		width: calc(100% - 2*var(--padding-mobile));
+
+		padding: var(--padding-mobile) var(--padding-mobile) 100px var(--padding-mobile);
+	}
+
+	.player-box{
+		width: calc( 100vw - 2 * var(--padding-mobile) );
+		height: calc( ( 100vw - 2 * var(--padding-mobile) ) * 0.563 + 50px);
+	}
+
+	.background-header{
+		width: calc( 100vw - 2* var(--padding-mobile));
+		height: calc(var(--displacement) - 2* var(--padding-mobile));
+		padding: var(--padding-mobile) var(--padding-mobile);
+	}
+
+	footer{
+		padding: var(--padding-mobile);
+	}
+
+}
+/* Turns the title off in the mobile version */
+@media only screen and (max-width: 450px){
+
+	/* Making text less big to fit in mobile screen */
+	.hamburger-header-text {
+		font-size: 5.5vw;
+	}
+	.info-text{
+		font-size: 5.5vw;
+	}
+	footer{
+		font-size: 5.5vw;
+	}
+}
